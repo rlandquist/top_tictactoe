@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div id="start-screen">
+    <h1>Tic-Tac-Toe</h1>
+    <div>
+      <label for="p1-name">Player 1 (X)</label>
+      <input type="text" id="p1-name" placeholder="Enter name" maxlength="16" />
+    </div>
+    <div>
+      <label for="p2-name">Player 2 (O)</label>
+      <input type="text" id="p2-name" placeholder="Enter name" maxlength="16" />
+    </div>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div id="game-screen" class="hidden">
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="score-bar">
+      <span id="p1-label">Player 1</span>: <span id="p1-score">0</span>
+      &nbsp;|&nbsp;
+      <span id="p2-label">Player 2</span>: <span id="p2-score">0</span>
+    </div>
+
+    <p id="status">—</p>
+
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="controls">
+      <button id="restart-btn">Next Round</button>
+      <button id="new-game-btn">New Game</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

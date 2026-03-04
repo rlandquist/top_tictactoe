@@ -1,0 +1,97 @@
+body {
+  font-family: sans-serif;
+  max-width: 50%;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+input {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 0.5rem .75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.score-bar {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  justify-content: center;
+
+}
+
+#status {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  /* grid-template-columns: repeat(3, 80px); */
+  /* grid-template-rows: repeat(3, 80px); */
+  /* gap: 4px; */
+  margin-bottom: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 20rem;
+  /* controls overall board size */
+  width: 100%;
+  /* shrinks on small screens */
+
+}
+
+.cell {
+  aspect-ratio: 1;
+  /* width: 80px; */
+  /* height: 80px; */
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.marked {
+  cursor: default;
+}
+
+.cell.winner {
+  background-color: lightgreen;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+
+}
